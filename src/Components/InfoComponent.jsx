@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 function InfoComponent() {
   // État pour stocker les données de CO2 et de température
   const [info, setInfo] = useState({
@@ -55,9 +56,13 @@ function InfoComponent() {
 
   // Rendu des données de CO2 et de température
   return (
-    <div>
-      {info.temp} °C<br />
-      {info.co2} ppm
+    <div className={queryCo2 && queryTemp ?'info-big-component' : 'info-big-component bad'}>
+      {info.temp} °C<br/>
+      <h6>Температура</h6><br />
+
+      {info.co2} ppm <br />
+      <h6>со2</h6><br />
+
     </div>
   );
 }

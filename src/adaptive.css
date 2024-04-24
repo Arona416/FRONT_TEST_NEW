@@ -1,0 +1,25 @@
+@media(max-width:900px){
+    .info-big-component{
+        font-size: 50px;
+    }
+}
+@media(max-width:780px){
+    .main-info{
+        grid-template-areas: 
+        "A A A A A A"
+        "D D D D D D"
+        "D D D D D D"
+        "B B B C C C"
+    }
+}
+
+@media(max-width:510px){
+    .main-info{
+        grid-template-areas: 
+        "A A A A A A"
+        "D D D D D D"
+        "D D D D D D"
+        "B B B B B B "
+        "C C C C C C"
+    }
+}

@@ -4,26 +4,27 @@ import React from 'react'
 function FeedBackComponent() {
   return (
     <>
-     <div className="Component">
-            <div className='component_haut'>
-                <h3>Душнила Доволен вами </h3>
+            <div className='component-haut'>
+                <h3>Душнила <br />Доволен вами </h3>
                 <h5>Все показатели в норме</h5>
 
            </div>
 
-           <div className='component_buttom_left'>
-                <h3>Дней без Душноты 0</h3>
-                <a href="#">История → </a> 
+          <div className="component-bottom">
+            <div className='component-bottom-left'>
+                    <h3>Дней без Душноты 0</h3>
+                    <a href="#" className='link'>
+                        <p>История</p>
+                        <p> →</p>
 
-            </div>
-            
-            <div className='component_buttom_rigth'>
-                <img src={logo} alt="" />
+                        </a>
 
             </div>
      </div>
+     <div className='component-bottom-rigth'>
+                <img  src={logo} alt="" className='logo' />
 
-   
+            </div>
    
    </>
    
